@@ -1,21 +1,16 @@
 
 saida = ''
-
 def adicao (num1, num2):
     soma = num1 + num2
     return soma
-
 def subracao (num1, num2):
     subracao = num1 - num2
     return subracao
-
 def multiplicacao (num1, num2):
     multiplicacao = num1 * num2
     return multiplicacao
-
 def divisao (num1, num2):
     divisao = num1 / num2
-    
     if num1 == 0:
         return print("Não foi possível realizar a divisão po 0")
     elif num1 == '-':
@@ -24,7 +19,6 @@ def divisao (num1, num2):
         return print("Não foi possível fazer a divisão por 0")
     elif num2 == '-':
         return divisao
-    
 def calculadora (num1, num2, escolha):
     num1 = float(input("Digite o primeiro número: "))
     num2 = float(input("Digite o segundo número: "))
@@ -39,7 +33,6 @@ def calculadora (num1, num2, escolha):
         resultado = divisao(num1, num2)
     else:
         print("Escolha inválida")
-
     print("Resultado da operação escolhida"), resultado
     
 
